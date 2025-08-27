@@ -366,16 +366,9 @@ REDIS_PASSWORD=your-redis-password
 ## 📞 Suporte & Comunidade
 
 ### Canais de Comunicação
-- 📧 **Email**: matheus.leal@codemarket.dev
-- 💬 **Discord**: CodeMarket Community
-- 📱 **WhatsApp**: +55 (32) 99999-9999
-- 🐦 **Twitter**: @matheuslealdev
+- 📧 **Email**: matheuslealcosta@icloud.com
+- 📱 **WhatsApp**: +55 (24) 992052019
 
-### Documentação Técnica
-- 📖 **Wiki**: Documentação completa
-- 🎥 **YouTube**: Tutoriais em vídeo
-- 📝 **Blog**: Artigos técnicos
-- 💻 **Live Coding**: Streams semanais
 
 ---
 

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce - Nova Paleta de Cores</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        :root {
+            --bg-main: #F4F7F5; /* Fundo principal - Calma e limpeza */
+            --header-footer-bg: #A8DADC; /* Destaque suave - Confiança e modernidade */
+            --action-color: #E63946; /* Chamada para ação - Energia e urgência */
+            --text-color: #1D3557; /* Texto principal - Sofisticação e legibilidade */
+            --secondary-detail-color: #457B9D; /* Detalhes e bordas - Profundidade */
+            --card-bg: #FFFFFF; /* Fundo dos cards de produto */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: var(--bg-main);
+            color: var(--text-color);
+        }
+
+        .header {
+            background-color: var(--secondary-detail-color);
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .promo-banner {
+            background-color: var(--header-footer-bg);
+            color: var(--text-color);
+            text-align: center;
+            padding: 25px 20px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .products-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px 20px;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            width: 280px;
+            text-align: center;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(29, 53, 87, 0.15);
+        }
+
+        .product-image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #EAEFEC;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-detail-color);
+            font-size: 2em;
+        }
+
+        .product-card h3 {
+            margin: 20px 0 10px;
+            font-size: 1.4em;
+        }
+
+        .product-card p {
+            font-size: 0.9em;
+            color: #6c757d; /* Um cinza suave para a descrição */
+            line-height: 1.5;
+        }
+
+        .buy-button {
+            background-color: var(--action-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #d62828; /* Um tom um pouco mais escuro ao passar o mouse */
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: var(--text-color);
+            color: var(--bg-main);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>E-commerce Criativo</h1>
+    </header>
+
+    <div class="promo-banner">
+        <p>Promoções incríveis! Aproveite e compre agora</p>
+    </div>
+
+    <div class="products-container">
+        <div class="product-card">
+            <div class="product-image-placeholder">?</div>
+            <h3>Produto 1</h3>
+            <p>Descrição curta e atrativa do produto.</p>
+            <button class="buy-button">Comprar</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image-placeholder">?</div>
+            <h3>Produto 2</h3>
+            <p>Descrição curta e atrativa do produto.</p>
+            <button class="buy-button">Comprar</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image-placeholder">?</div>
+            <h3>Produto 3</h3>
+            <p>Descrição curta e atrativa do produto.</p>
+            <button class="buy-button">Comprar</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 E-commerce Criativo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,50 +1,40 @@
 {
-  "name": "desafio-react-code",
-  "version": "0.1.0",
+  "name": "matheuslealcosta-ecommerce",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.2.0",
-    "bootstrap": "^5.2.3",
-    "json-server": "^0.17.0",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.6.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.4.0",
-    "react-iframe": "^1.8.0",
-    "react-responsive-carousel": "^3.2.23",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "description": "Modern ecommerce platform with NestJS, Prisma, and React",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "api": "json-server --watch api.json"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean && rimraf node_modules",
+    "db:migrate": "cd apps/api && npm run db:migrate",
+    "db:seed": "cd apps/api && npm run db:seed",
+    "db:studio": "cd apps/api && npm run db:studio",
+    "docker:dev": "docker-compose -f docker-compose.dev.yml up",
+    "docker:prod": "docker-compose -f docker-compose.yml up"
   },
   "devDependencies": {
-    "tailwindcss": "^3.1.8"
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.0",
+    "rimraf": "^5.0.5",
+    "turbo": "^1.11.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   }
 }

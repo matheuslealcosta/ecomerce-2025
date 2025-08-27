@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/web/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    },
+    {
+      "src": "apps/api/src/main.ts",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["apps/api/prisma/schema.prisma"]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "apps/api/src/main.ts"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "apps/web/$1"
+    }
+  ],
+  "env": {
+    "DATABASE_URL": "@database_url",
+    "JWT_SECRET": "@jwt_secret",
+    "JWT_REFRESH_SECRET": "@jwt_refresh_secret",
+    "REDIS_HOST": "@redis_host",
+    "REDIS_PORT": "@redis_port",
+    "REDIS_PASSWORD": "@redis_password"
+  },
+  "buildCommand": "cd apps/web && npm run build",
+  "devCommand": "turbo run dev",
+  "installCommand": "npm install && cd apps/api && npx prisma generate"
+}

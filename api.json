@@ -1,317 +1,232 @@
 {
-    "members": [
+  "users": [
+    {
+      "id": "1",
+      "name": "Super Admin",
+      "email": "admin@marketplace.com",
+      "password": "admin123",
+      "role": "superadmin",
+      "avatar": "https://ui-avatars.com/api/?name=Super+Admin&background=8b5cf6&color=fff",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "2", 
+      "name": "João Silva",
+      "email": "gestor@marketplace.com",
+      "password": "gestor123",
+      "role": "gestor",
+      "avatar": "https://ui-avatars.com/api/?name=João+Silva&background=10b981&color=fff",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Maria Santos",
+      "email": "vendedor@marketplace.com", 
+      "password": "vendedor123",
+      "role": "vendedor",
+      "avatar": "https://ui-avatars.com/api/?name=Maria+Santos&background=f59e0b&color=fff",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "4",
+      "name": "Pedro Costa",
+      "email": "comprador@marketplace.com",
+      "password": "comprador123", 
+      "role": "comprador",
+      "avatar": "https://ui-avatars.com/api/?name=Pedro+Costa&background=3b82f6&color=fff",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "5",
+      "name": "Ana Oliveira",
+      "email": "ana.vendedora@marketplace.com",
+      "password": "vendedor123",
+      "role": "vendedor",
+      "avatar": "https://ui-avatars.com/api/?name=Ana+Oliveira&background=ec4899&color=fff",
+      "createdAt": "2024-01-02T00:00:00Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "sellerId": "3",
+      "title": "Smartphone Galaxy Pro Max",
+      "description": "Smartphone top de linha com câmera de 108MP, tela AMOLED 6.7\", 256GB de armazenamento e bateria de longa duração.",
+      "price": 2499.99,
+      "stock": 15,
+      "sku": "SMART-001",
+      "category": "Eletrônicos",
+      "images": [
+        "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=500&h=500&fit=crop"
+      ],
+      "status": "published",
+      "rejectionReason": null,
+      "createdAt": "2024-01-10T10:00:00Z",
+      "updatedAt": "2024-01-12T14:30:00Z"
+    },
+    {
+      "id": "2", 
+      "sellerId": "3",
+      "title": "Notebook Gamer RGB",
+      "description": "Notebook gamer com placa de vídeo dedicada, processador i7, 16GB RAM, SSD 1TB e iluminação RGB personalizável.",
+      "price": 4999.99,
+      "stock": 8,
+      "sku": "NOTE-002",
+      "category": "Informática",
+      "images": [
+        "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=500&h=500&fit=crop"
+      ],
+      "status": "published",
+      "rejectionReason": null,
+      "createdAt": "2024-01-11T09:15:00Z",
+      "updatedAt": "2024-01-13T16:45:00Z"
+    },
+    {
+      "id": "3",
+      "sellerId": "5",
+      "title": "Tênis Esportivo Premium",
+      "description": "Tênis esportivo de alta performance com tecnologia de amortecimento avançada e design moderno.",
+      "price": 299.99,
+      "stock": 25,
+      "sku": "TENIS-003",
+      "category": "Esportes",
+      "images": [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&h=500&fit=crop"
+      ],
+      "status": "published", 
+      "rejectionReason": null,
+      "createdAt": "2024-01-12T11:20:00Z",
+      "updatedAt": "2024-01-14T08:30:00Z"
+    },
+    {
+      "id": "4",
+      "sellerId": "3",
+      "title": "Relógio Inteligente Fitness",
+      "description": "Smartwatch com monitor cardíaco, GPS integrado, resistente à água e bateria de 7 dias.",
+      "price": 799.99,
+      "stock": 0,
+      "sku": "WATCH-004",
+      "category": "Eletrônicos",
+      "images": [
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=500&h=500&fit=crop"
+      ],
+      "status": "submitted",
+      "rejectionReason": null,
+      "createdAt": "2024-01-15T13:45:00Z",
+      "updatedAt": "2024-01-15T13:45:00Z"
+    },
+    {
+      "id": "5",
+      "sellerId": "5",
+      "title": "Fone de Ouvido Bluetooth Premium",
+      "description": "Fone over-ear com cancelamento ativo de ruído, áudio Hi-Fi e 30h de bateria.",
+      "price": 599.99,
+      "stock": 12,
+      "sku": "HEADPHONE-005",
+      "category": "Eletrônicos",
+      "images": [
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&h=500&fit=crop"
+      ],
+      "status": "draft",
+      "rejectionReason": null,
+      "createdAt": "2024-01-16T15:10:00Z",
+      "updatedAt": "2024-01-16T15:10:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "buyerId": "4",
+      "items": [
         {
-            "id": 1,
-            "name": "Ana Beatriz Lana",
-            "email": "ana.armond@codejr.com.br",
-            "aniversario": "06/10",
-            "departamentos" : [
-                "marketing"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 2,
-            "name": "Arthur Bonaldi",
-            "email": "arthur.bonaldi@codejr.com.br",
-            "aniversario": "12/12",
-            "departamentos" : [
-                "presidencia"
-            ],
-            "cargo": "diretor"
-        },
-        {
-            "id": 3,
-            "name": "Bernardo Dantas Ortiz",
-            "email": "bernardo.ortiz@codejr.com.br",
-            "aniversario": "01/28",
-            "departamentos" : [
-                "projetos"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 4,
-            "name": "Brenner Henrick",
-            "email": "brenner.costa@codejr.com.br",
-            "aniversario": "09/17",
-            "departamentos" : [
-                "comercial"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 5,
-            "name": "Daniel Freitas",
-            "email": "daniel.freitas@codejr.com.br",
-            "aniversario": "04/19",
-            "departamentos" : [
-                "comercial"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 6,
-            "name": "Fernando Giardini",
-            "email": "fernando.giardini@codejr.com.br",
-            "aniversario": "06/14",
-            "departamentos" : [
-                "comercial"
-            ],
-            "cargo": "diretor"
-        },
-        {
-            "id": 7,
-            "name": "Frederico Dôndici",
-            "email": "frederico.dondici@codejr.com.br",
-            "aniversario": "04/27",
-            "departamentos" : [
-                "vpgg"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 8,
-            "name": "Gabriel Duque",
-            "email": "gabrielschiffner@codejr.com.br",
-            "aniversario": "08/14",
-            "departamentos" : [
-                "projetos"
-            ],
-            "cargo": "gerente"
-        },
-        {
-            "id": 9,
-            "name": "Gabriel Bahia",
-            "email": "gabriel.bahia@codejr.com.br",
-            "aniversario": "09/17",
-            "departamentos" : [
-                "projetos"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 10,
-            "name": "Gabriella Cruz",
-            "email": "gabriella.cruz@codejr.com.br",
-            "aniversario": "12/09",
-            "departamentos" : [
-                "vpgg"
-            ],
-            "cargo": "gerente"
-        },
-        {
-            "id": 11,
-            "name": "Gustavo Carvalhaes",
-            "email": "gustavo.ferreira@codejr.com.br",
-            "aniversario": "10/06",
-            "departamentos" : [
-                "comercial",
-                "projetos"
-            ],
-            "cargo": "gerente"
-        },
-        {
-            "id": 12,
-            "name": "Gustavo Coelho Martins",
-            "email": "gustavo.martins@codejr.com.br",
-            "aniversario": "12/08",
-            "departamentos" : [
-                "vpgg",
-                "comercial"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 13,
-            "name": "Gustavo Vieira Ribeiro",
-            "email": "gustavo.ribeiro@codejr.com.br",
-            "aniversario": "06/11",
-            "departamentos" : [
-                "projetos"
-            ],
-            "cargo": "gerente"
-        },
-        {
-            "id": 14,
-            "name": "Henrique Colonese",
-            "email": "henrique.colonese@codejr.com.br",
-            "aniversario": "10/04",
-            "departamentos" : [
-                "projetos"
-            ],
-            "cargo": "gerente"
-        },
-        {
-            "id": 15,
-            "name": "Isabela Salvador",
-            "email": "isabela.salvador@codejr.com.br",
-            "aniversario": "07/30",
-            "departamentos" : [
-                "marketing"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 16,
-            "name": "Isabelly Cristine",
-            "email": "isabelly.oliveira@codejr.com.br",
-            "aniversario": "05/02",
-            "departamentos" : [
-                "vpgg"
-            ],
-            "cargo": "diretor"
-        },
-        {
-            "id": 17,
-            "name": "João Pedro Banhato",
-            "email": "joao.banhato@codejr.com.br",
-            "aniversario": "12/19",
-            "departamentos" : [
-                "vpgg"
-            ],
-            "cargo": "gerente"
-        },
-        {
-            "id": 18,
-            "name": "João Pedro Ferreira (Cascata)",
-            "email": "joao.ferreira@codejr.com.br",
-            "aniversario": "06/26",
-            "departamentos" : [
-                "projetos"
-            ],
-            "cargo": "diretor"
-        },
-        {
-            "id": 19,
-            "name": "Jonatas Dias",
-            "email": "jonatas.dias@codejr.com.br",
-            "aniversario": "07/21",
-            "departamentos" : [
-                "marketing"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 20,
-            "name": "Kayan Martins de Freitas",
-            "email": "kayan.freitas@codejr.com.br",
-            "aniversario": "05/21",
-            "departamentos" : [
-                "projetos"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 21,
-            "name": "Kleiton Ewerton de Oliveira",
-            "email": "kleiton.ewerton@codejr.com.br",
-            "aniversario": "07/06",
-            "departamentos" : [
-                "vpgg"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 22,
-            "name": "Lucas de Oliveira Varino",
-            "email": "lucas.varino@codejr.com.br",
-            "aniversario": "01/15",
-            "departamentos" : [
-                "projetos"
-            ],
-            "cargo": "gerente"
-        },
-        {
-            "id": 23,
-            "name": "Lucas Henrique de Araújo",
-            "email": "lucas.araujo@codejr.com.br",
-            "aniversario": "11/11",
-            "departamentos" : [
-                "vpgg"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 24,
-            "name": "Maria Luísa Riolino",
-            "email": "maria.riolino@codejr.com.br",
-            "aniversario": "02/15",
-            "departamentos" : [
-                "marketing"
-            ],
-            "cargo": "gerente"
-        },
-        {
-            "id": 25,
-            "name": "Maria Luíza Dornelas",
-            "email": "maria.dornelas@codejr.com.br",
-            "aniversario": "07/30",
-            "departamentos" : [
-                "comercial"
-            ],
-            "cargo": "gerente"
-        },
-        {
-            "id": 26,
-            "name": "Mariana Siano",
-            "email": "mariana.siano@codejr.com.br",
-            "aniversario": "04/15",
-            "departamentos" : [
-                "vpgg"
-            ],
-            "cargo": "gerente"
-        },
-        {
-            "id": 27,
-            "name": "Mateus Alves",
-            "email": "mateus.alves@codejr.com.br",
-            "aniversario": "02/22",
-            "departamentos" : [
-                "marketing"
-            ],
-            "cargo": "gerente"
-        },
-        {
-            "id": 28,
-            "name": "Mateus Leal Costa",
-            "email": "matheus.leal@codejr.com.br",
-            "aniversario": "11/21",
-            "departamentos" : [
-                "vpgg"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 29,
-            "name": "Pedro do Couto Filgueiras",
-            "email": "pedro.couto@codejr.com.br",
-            "aniversario": "03/15",
-            "departamentos" : [
-                "projetos"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 30,
-            "name": "Pedro Grimaldi Hansel",
-            "email": "pedro.grimaldi@codejr.com.br",
-            "aniversario": "06/13",
-            "departamentos" : [
-                "projetos",
-                "comercial"
-            ],
-            "cargo": "assessor"
-        },
-        {
-            "id": 31,
-            "name": "Rafael de Oliveira Zimbrão",
-            "email": "rafael.zimbrao@codejr.com.br",
-            "aniversario": "06/22",
-            "departamentos" : [
-                "marketing"
-            ],
-            "cargo": "assessor"
+          "productId": "1",
+          "title": "Smartphone Galaxy Pro Max",
+          "price": 2499.99,
+          "qty": 1,
+          "sellerId": "3"
         }
-    ]
+      ],
+      "total": 2499.99,
+      "status": "paid",
+      "paymentProvider": "mercadopago",
+      "paymentRef": "MP-12345678",
+      "shippingAddress": {
+        "street": "Rua das Flores, 123",
+        "city": "São Paulo",
+        "state": "SP",
+        "zipCode": "01234-567"
+      },
+      "createdAt": "2024-01-20T10:30:00Z",
+      "updatedAt": "2024-01-20T11:00:00Z"
+    },
+    {
+      "id": "2", 
+      "buyerId": "4",
+      "items": [
+        {
+          "productId": "3",
+          "title": "Tênis Esportivo Premium",
+          "price": 299.99,
+          "qty": 2,
+          "sellerId": "5"
+        }
+      ],
+      "total": 599.98,
+      "status": "pending",
+      "paymentProvider": "mercadopago",
+      "paymentRef": "MP-87654321",
+      "shippingAddress": {
+        "street": "Av. Paulista, 456",
+        "city": "São Paulo", 
+        "state": "SP",
+        "zipCode": "01310-100"
+      },
+      "createdAt": "2024-01-21T14:15:00Z",
+      "updatedAt": "2024-01-21T14:15:00Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "productId": "1",
+      "buyerId": "4",
+      "rating": 5,
+      "comment": "Produto excelente! Chegou rapidinho e exatamente como descrito. Super recomendo!",
+      "status": "published",
+      "createdAt": "2024-01-22T16:20:00Z"
+    },
+    {
+      "id": "2",
+      "productId": "3", 
+      "buyerId": "4",
+      "rating": 4,
+      "comment": "Tênis muito confortável e de boa qualidade. Apenas o prazo de entrega que foi um pouco longo.",
+      "status": "published",
+      "createdAt": "2024-01-23T09:45:00Z"
+    }
+  ],
+  "categories": [
+    { "id": "1", "name": "Eletrônicos", "slug": "eletronicos" },
+    { "id": "2", "name": "Informática", "slug": "informatica" },
+    { "id": "3", "name": "Esportes", "slug": "esportes" },
+    { "id": "4", "name": "Casa & Jardim", "slug": "casa-jardim" },
+    { "id": "5", "name": "Moda", "slug": "moda" },
+    { "id": "6", "name": "Livros", "slug": "livros" }
+  ],
+  "settings": {
+    "mercadoPago": {
+      "publicKey": "TEST-your-public-key-here",
+      "accessToken": "TEST-your-access-token-here",
+      "environment": "sandbox"
+    },
+    "marketplace": {
+      "name": "CodeMarket",
+      "commission": 0.1,
+      "currency": "BRL"
+    }
+  }
 }
